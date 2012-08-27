@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US" xmlns:fb="https://www.facebook.com/2008/fbml">
+<head prefix="og: http://ogp.me/ns# localhost_cesar: 
+                  http://ogp.me/ns/apps/localhost_cesar#">
+  <title>Ciudadalcubo</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  <meta property="fb:app_id" content="[YOUR_APP_ID]" /> 
+  <meta property="og:type" content="localhost_cesar:incidence" /> 
+  <meta property="og:title" content="Stuffed Incidences" /> 
+  <meta property="og:image" content="http://fbwerks.com:8000/zhen/cookie.jpg" /> 
+  <meta property="og:description" content="Most terribles incidences" /> 
+  <meta property="og:url" content="http://fbwerks.com:8000/zhen/cookie.html">
+</head>
+<body>
+	<p class="notice"><%= notice %></p>
+	<p class="alert"><%= alert %></p>
+
+<%= yield %>
+
+</body>
+</html>
